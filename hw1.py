@@ -30,8 +30,8 @@ if __name__ == "__main__":
     import matplotlib.pyplot as plt
     import seaborn as sns
 
-    # Take in n_rows as command line argument
-    n_rows = int(sys.argv[1])
+    # Take in n_rows as command line argument with default value of 15
+    n_rows = int(sys.argv[1]) if len(sys.argv) > 1 else 15
 
     # Run pascal's triangle with input n_rows
     pascal(n=n_rows)
